@@ -1,16 +1,10 @@
-﻿# metabase-dremio-driver
+﻿# metabase-dremio-cloud-driver
 
-Dremio driver for Metabase BI
-
-Version compatibility:
-
--   Version 1.1.x works with Metabase v0.43.0/v1.43.0 and above
--   Version 1.0.x works with Metabase bellow v0.43.0/v1.43.0 (exclude)
-
+Dremio Cloud driver for Metabase BI
 
 Tested on:
 
--   Dremio 20.0.0+
+-   Dremio Cloud
 -   Metabase 0.43.0+
 
 
@@ -33,7 +27,7 @@ Dremio Driver can works in most metabase functionalities:
 
 ## Building the driver
 
-For Metabase 0.43.0+, there were many changes, for exmample, the build tool changed from lein to Clojure CLI Tools. So, the build steps for metabase-dremio-driver 1.1.x also changed.
+For Metabase 0.43.0+, there were many changes, for exmample, the build tool changed from lein to Clojure CLI Tools. So, the build steps for metabase-dremio-cloud-driver 1.1.x also changed.
 
 ### Prereq: Build Metabase source locally
 
@@ -54,4 +48,4 @@ The generated "dremio.metabase-driver.jar" can be found in target folder
 
 ## Thanks
 
-Referred to <https://github.com/arsenikstiger/dremio-driver>, but most logic are referred from Metabase's redshift & sparksql driver.
+Based on <https://github.com/Baoqi/metabase-dremio-driver>.

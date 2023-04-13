@@ -52,7 +52,7 @@
   (-> {:applicationName    config/mb-app-id-string
        :type :dremio
        :subprotocol "dremio"
-       :subname (str "direct=" host ":" port (if-not (str/blank? schema) (str ";schema=" schema)))
+       :subname (str "direct=" host ":" port (if-not (str/blank? schema) (str ";PROJECT_ID=" schema)))
        :user user
        :password password
        :host host
